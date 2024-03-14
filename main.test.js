@@ -63,3 +63,62 @@ test("should return the names in the correct order", () => {
 });
 
 // MVP 2
+
+// Test Case 1
+test("should return same array", () => {
+  const expected = ["Jessica Day"];
+  const actual = reorderNames(["Jessica Day"]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 2
+test("should return the same array", () => {
+  const expected = ["Jessica Day", "Cecelia Parekh"];
+  const actual = reorderNames(["Jessica Day", "Cecelia Parekh"]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 3
+test("should return the names in the correct order", () => {
+  const expected = ["Jessica Day", "Nicholas Miller"];
+  const actual = reorderNames(["Nicholas Miller", "Jessica Day"]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 4
+test("should return the names in the correct order", () => {
+  const expected = [
+    "Jessica Day",
+    "Paul Genzlinger",
+    "Sam Sweeney",
+    "Winston Schmidt",
+    "Nicholas Miller",
+  ];
+  const actual = reorderNames([
+    "Jessica Day",
+    "Nicholas Miller",
+    "Paul Genzlinger",
+    "Winston Schmidt",
+    "Sam Sweeney",
+  ]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 5
+test("should return the names in the correct order", () => {
+  const expected = [
+    "Jessica Day",
+    "Cecelia Parekh",
+    "Sam Sweeney",
+    "Winston Schmidt",
+    "Nicholas Miller",
+  ];
+  const actual = reorderNames([
+    "Jessica Day",
+    "Nicholas Miller",
+    "Cecelia Parekh",
+    "Winston Schmidt",
+    "Sam Sweeney",
+  ]);
+  expect(actual).toStrictEqual(expected);
+});
