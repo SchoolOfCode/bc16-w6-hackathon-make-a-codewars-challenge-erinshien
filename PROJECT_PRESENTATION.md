@@ -37,6 +37,18 @@ Write a function that takes in an array of names and returns an array where the 
 
 ### MVP 2
 
+| Test Case | Test Description                                                                                   | Input                                                                                       | Expected Result                                                                             |
+| --------- | -------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| 1         | An array of one name                                                                               | [ 'Jessica Day' ]                                                                           | [ 'Jessica Day' ]                                                                           |
+| 2         | An array of two names in the correct order                                                         | [ 'Jessica Day', 'Cecelia Parekh' ]                                                         | [ 'Jessica Day', 'Cecelia Parekh' ]                                                         |
+| 3         | An array of two names in an incorrect order                                                        | [ 'Nicholas Miller', 'Jessica Day' ]                                                        | [ 'Jessica Day', 'Nicholas Miller' ]                                                        |
+| 4         | An array of five names in an incorrect order                                                       | [ 'Jessica Day', 'Nicholas Miller', 'Paul Genzlinger', 'Winston Schmidt', 'Sam Sweeney' ]   | [ 'Jessica Day', 'Paul Genzlinger', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller']    |
+| 5         | An array of five names with two first names that have the same last letter                         | [ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Sam Sweeney' ]    | [ 'Jessica Day', 'Cecelia Parekh', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]    |
+| 6         | An array of five names with two sets of first names that have the same last letter                 | [ 'Jessica Day', 'Abby Day', 'Cecelia Parekh', 'Aly Nelson', 'Sam Sweeney' ]                | [ 'Jessica Day', 'Cecelia Parekh', 'Sam Sweeney', 'Abby Day', 'Aly Nelson' ]                |
+| 7         | An array of five names with two first names that have the same two last letters                    | [ 'Aria Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Sam Sweeney' ]       | [ 'Cecelia Parekh', 'Aria Day', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]       |
+| 8         | An array of five names with two first names that have all the same letters except the first letter | [ 'Jessica Day', 'Mason Miller', 'Jason Genzlinger', 'Winston Schmidt', 'Sam Sweeney' ]     | [ 'Jessica Day', 'Sam Sweeney', 'Jason Genzlinger', 'Mason Miller', 'Winston Schmidt' ]     |
+| 9         | An array of five names with two first names that are the same                                      | [ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ] | [ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ] |
+
 ## ✏️ The Plan
 
 ### Setup
@@ -59,10 +71,10 @@ Write a function that takes in an array of names and returns an array where the 
 - Import vitest and my function into `main.test.js` ✅
 - Create a list of different inputs that could test for all edge cases ✅
 - Write a test for each of the items in my list of inputs ✅
-- Temporarily add a working implementation to the solution function in `main.js`
-- Check that the tests fail before implementation and pass when the function is coded correctly
-- Remove the solution code
-- Celebrate completing MVP 1!
+- Temporarily add a working implementation to the solution function in `main.js` ✅
+- Check that the tests fail before implementation and pass when the function is coded correctly ✅
+- Remove the solution code ✅
+- Celebrate completing MVP 1! ✅
 
 **MVP 2**
 

@@ -1,6 +1,8 @@
 import { test, expect } from "vitest";
 import { reorderNames } from "./main.js";
 
+// MVP 1
+
 // Test Case 1
 test("should return same array", () => {
   // Arrange
@@ -59,3 +61,5 @@ test("should return the names in the correct order", () => {
   const actual = reorderNames(["Nora", "Dora", "Peter", "Elizabeth", "Sara"]);
   expect(actual).toStrictEqual(expected);
 });
+
+// MVP 2
