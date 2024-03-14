@@ -20,6 +20,23 @@ Adam Aardvark is fed up of being chosen first in class. His teacher always picks
 
 Write a function that takes in an array of names and returns an array where the names are sorted in alphabetical order in reverse - the last letter of each name takes priority, then the second last letter, and so on.
 
+## List of Tests
+
+### MVP 1
+
+| Test Case | Test Description                                                                             | Input                                             | Expected Result                                   |
+| --------- | -------------------------------------------------------------------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
+| 1         | An array of one name                                                                         | [ 'Neal' ]                                        | [ 'Neal' ]                                        |
+| 2         | An array of two names in the correct order                                                   | [ 'Neal', 'Peter' ]                               | [ 'Neal', 'Peter' ]                               |
+| 3         | An array of two names in an incorrect order                                                  | [ 'Peter', 'Neal' ]                               | [ 'Neal', 'Peter' ]                               |
+| 4         | An array of five names in an incorrect order                                                 | [ 'Neal', 'Peter', 'Elizabeth', 'Sara', 'Kate' ]  | [ 'Sara', 'Kate', 'Elizabeth', 'Neal', 'Peter' ]  |
+| 5         | An array of five names with two names that have the same last letter                         | [ 'Neal', 'Peter', 'Elizabeth', 'Sara', 'Diana' ] | [ 'Diana', 'Sara', 'Elizabeth', 'Neal', 'Peter' ] |
+| 6         | An array of five names with two sets of names that have the same last letter                 | [ 'Neal', 'Kate', 'Mozzie', 'Sara', 'Diana' ]     | [ 'Diana', 'Sara', 'Mozzie', 'Kate', 'Neal' ]     |
+| 7         | An array of five names with two names that have the same two last letters                    | [ 'Neal', 'Peter', 'Rodger', 'Sara', 'Diana' ]    | [ 'Diana', 'Sara', 'Neal', 'Rodger', 'Peter' ]    |
+| 8         | An array of five names with two names that have all the same letters except the first letter | [ 'Nora', 'Dora', 'Peter', 'Elizabeth', 'Sara' ]  | [ 'Sara', 'Dora', 'Nora', 'Elizabeth', 'Peter' ]  |
+
+### MVP 2
+
 ## ✏️ The Plan
 
 ### Setup
@@ -39,8 +56,8 @@ Write a function that takes in an array of names and returns an array where the 
 **MVP 1**
 
 - Write my kata scenario in a comment in `main.js` (include an exported function skeleton) ✅
-- Import vitest and my function into `main.test.js`
-- Create a list of different inputs that could test for all edge cases
+- Import vitest and my function into `main.test.js` ✅
+- Create a list of different inputs that could test for all edge cases ✅
 - Write a test for each of the items in my list of inputs
 - Temporarily add a working implementation to the solution function in `main.js`
 - Check that the tests fail before implementation and pass when the function is coded correctly
