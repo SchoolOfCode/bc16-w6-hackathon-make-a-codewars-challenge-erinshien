@@ -58,7 +58,7 @@ Write a function that takes in an array of names and returns an array where the 
 - Write my kata scenario in a comment in `main.js` (include an exported function skeleton) ✅
 - Import vitest and my function into `main.test.js` ✅
 - Create a list of different inputs that could test for all edge cases ✅
-- Write a test for each of the items in my list of inputs
+- Write a test for each of the items in my list of inputs ✅
 - Temporarily add a working implementation to the solution function in `main.js`
 - Check that the tests fail before implementation and pass when the function is coded correctly
 - Remove the solution code

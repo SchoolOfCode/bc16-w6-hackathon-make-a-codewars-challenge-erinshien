@@ -9,8 +9,10 @@
  *  `[ 'Sara', 'Kate', 'Elizabeth', 'Neal', 'Peter' ]
  *
  *  The final letter of 'Sara' is 'a', so it goes first. The final letter of 'Kate' is 'e', so it goes next, etc.
+ *
+ * Arrays containing multiple identical names will not be provided as arguments.
  */
 
-export function reorderNames(array) {
+export function reorderNames(names) {
   // Adam thanks you for your help!
 }
