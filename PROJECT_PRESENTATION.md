@@ -18,7 +18,7 @@ Sort an array of first and last names in alphabetical order by the final letter 
 
 Adam Aardvark is fed up of being chosen first in class. His teacher always picks on students in alphabetical order by the first letter of their last name - and with a last name like that, Adam has no chance! He thinks a better way to alphabetically order the class would be by the last letter of their first names, so he can sit comfortably in the middle.
 
-Write a function that takes in an array of names and returns an array where the names are sorted in alphabetical order in reverse - the last letter takes priority, then the second last letter, and so on.
+Write a function that takes in an array of names and returns an array where the names are sorted in alphabetical order in reverse - the last letter of each name takes priority, then the second last letter, and so on.
 
 ## ✏️ The Plan
 
@@ -36,13 +36,25 @@ Write a function that takes in an array of names and returns an array where the 
 
 ### Build
 
-- Write my kata scenario in a comment in `main.js` (include an exported function skeleton)
-- Create a list of different inputs that could test for all edge cases for MVP 1
+**MVP 1**
+
+- Write my kata scenario in a comment in `main.js` (include an exported function skeleton) ✅
 - Import vitest and my function into `main.test.js`
+- Create a list of different inputs that could test for all edge cases
 - Write a test for each of the items in my list of inputs
 - Temporarily add a working implementation to the solution function in `main.js`
 - Check that the tests fail before implementation and pass when the function is coded correctly
 - Remove the solution code
+- Celebrate completing MVP 1!
+
+**MVP 2**
+
+- Create a list of different inputs that could test for all edge cases of my more complex kata problem
+- Write a test for each of the items in my list of inputs
+- Temporarily add a working implementation to the solution function in `main.js`
+- Check that the tests fail before implementation and pass when the function is coded correctly
+- Remove the solution code
+- Celebrate completing MVP 2!!
 
 ### Deploy
 
