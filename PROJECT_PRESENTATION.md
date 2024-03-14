@@ -1,24 +1,26 @@
-Put your plan, story, and any supporting material here, you could use the help of a readme markdown generator such as [readme.so](https://readme.so/)
+# ✨ SoC Hackathon Week 6 - Erin Smith ✨
 
-# SoC Hackathon Week 6 - Erin Smith
+## 👋 Intro
 
-## MVPS
+Hiya, I'm Erin! I'm originally from Sydney, Australia and now live in Liverpool, UK. I used to be an art director for film & television - I would make things, people would watch them, and that was that. Now I'm transitioning into tech to make things that people can actually interact with - like this kata!
+
+## 🎯 MVPS
 
 ### MVP 1
 
-Sort an array of strings in alphabetical order by the final letter in each string, e.g. `[ 'Neal', 'Peter', 'Elizabeth', 'Sara', 'Kate' ]` returns -> `[ 'Sara', 'Kate', 'Elizabeth', 'Neal', 'Peter' ]` Arrays containing multiple identical names will not be provided as arguments.
+Sort an array of strings in alphabetical order by the final letter in each string, e.g. <br> `[ 'Neal', 'Peter', 'Elizabeth', 'Sara', 'Kate' ]` <br> returns -> <br> `[ 'Sara', 'Kate', 'Elizabeth', 'Neal', 'Peter' ]` <br> Arrays containing multiple identical names will not be provided as arguments.
 
 ### MVP 2
 
-Sort an array of first and last names in alphabetical order by the final letter of the first name. If two or more first names are identical, those names should be ordered alphabetically by the last letter of the last name, e.g. `[ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ]` returns -> `[ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ]`
+Sort an array of first and last names in alphabetical order by the final letter of the first name. If two or more first names are identical, those names should be ordered alphabetically by the last letter of the last name, e.g. <br> `[ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ]` <br> returns -> <br> `[ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ]`
 
-## My Kata Scenario
+## 📖 My Kata Scenario
 
 Adam Aardvark is fed up of being chosen first in class. His teacher always picks on students in alphabetical order by the first letter of their last name - and with a last name like that, Adam has no chance! He thinks a better way to alphabetically order the class would be by the last letter of their first names, so he can sit comfortably in the middle.
 
 Write a function that takes in an array of names and returns an array where the names are sorted in alphabetical order in reverse - the last letter takes priority, then the second last letter, and so on.
 
-## The Plan
+## ✏️ The Plan
 
 ### Setup
 
@@ -47,3 +49,9 @@ Write a function that takes in an array of names and returns an array where the 
 - Polish my presentation markdown file
 - Share my repo link in the Hackathon Channel
 - Upload my kata to Codewars
+
+## 💭 Reflections
+
+### Successes
+
+### Improvements
