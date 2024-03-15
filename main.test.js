@@ -4,6 +4,7 @@ import { reorderNames } from "./main.js";
 // MVP 1
 
 // Test Case 1
+// An array of one name
 test("should return same array", () => {
   // Arrange
   const expected = ["Neal"];
@@ -14,6 +15,7 @@ test("should return same array", () => {
 });
 
 // Test Case 2
+// An array of two names in the correct order
 test("should return the same array", () => {
   const expected = ["Neal", "Peter"];
   const actual = reorderNames(["Neal", "Peter"]);
@@ -21,6 +23,7 @@ test("should return the same array", () => {
 });
 
 // Test Case 3
+// An array of two names in an incorrect order
 test("should return the names in the correct order", () => {
   const expected = ["Neal", "Peter"];
   const actual = reorderNames(["Peter", "Neal"]);
@@ -28,6 +31,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 4
+// An array of five names in an incorrect order
 test("should return the names in the correct order", () => {
   const expected = ["Sara", "Kate", "Elizabeth", "Neal", "Peter"];
   const actual = reorderNames(["Neal", "Peter", "Elizabeth", "Sara", "Kate"]);
@@ -35,6 +39,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 5
+// An array of five names with two names that have the same last letter
 test("should return the names in the correct order", () => {
   const expected = ["Diana", "Sara", "Elizabeth", "Neal", "Peter"];
   const actual = reorderNames(["Neal", "Peter", "Elizabeth", "Sara", "Diana"]);
@@ -42,6 +47,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 6
+// An array of five names with two sets of names that have the same last letter
 test("should return the names in the correct order", () => {
   const expected = ["Diana", "Sara", "Mozzie", "Kate", "Neal"];
   const actual = reorderNames(["Neal", "Kate", "Mozzie", "Sara", "Diana"]);
@@ -49,6 +55,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 7
+// An array of five names with two names that have the same two last letters
 test("should return the names in the correct order", () => {
   const expected = ["Diana", "Sara", "Neal", "Rodger", "Peter"];
   const actual = reorderNames(["Neal", "Peter", "Rodger", "Sara", "Diana"]);
@@ -56,6 +63,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 8
+// An array of five names with two names that have all the same letters except the first letter
 test("should return the names in the correct order", () => {
   const expected = ["Sara", "Dora", "Nora", "Elizabeth", "Peter"];
   const actual = reorderNames(["Nora", "Dora", "Peter", "Elizabeth", "Sara"]);
@@ -65,6 +73,7 @@ test("should return the names in the correct order", () => {
 // MVP 2
 
 // Test Case 1
+// An array of one name
 test("should return same array", () => {
   const expected = ["Jessica Day"];
   const actual = reorderNames(["Jessica Day"]);
@@ -72,6 +81,7 @@ test("should return same array", () => {
 });
 
 // Test Case 2
+// An array of two names in the correct order
 test("should return the same array", () => {
   const expected = ["Jessica Day", "Cecelia Parekh"];
   const actual = reorderNames(["Jessica Day", "Cecelia Parekh"]);
@@ -79,6 +89,7 @@ test("should return the same array", () => {
 });
 
 // Test Case 3
+// An array of two names in an incorrect order
 test("should return the names in the correct order", () => {
   const expected = ["Jessica Day", "Nicholas Miller"];
   const actual = reorderNames(["Nicholas Miller", "Jessica Day"]);
@@ -86,6 +97,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 4
+// An array of five names in an incorrect order
 test("should return the names in the correct order", () => {
   const expected = [
     "Jessica Day",
@@ -105,6 +117,7 @@ test("should return the names in the correct order", () => {
 });
 
 // Test Case 5
+// An array of five names with two first names that have the same last letter
 test("should return the names in the correct order", () => {
   const expected = [
     "Jessica Day",
@@ -117,6 +130,66 @@ test("should return the names in the correct order", () => {
     "Jessica Day",
     "Nicholas Miller",
     "Cecelia Parekh",
+    "Winston Schmidt",
+    "Sam Sweeney",
+  ]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 6
+// An array of five names with two sets of first names that have the same last letter
+test("should return the names in the correct order", () => {
+  const expected = [
+    "Jessica Day",
+    "Cecelia Parekh",
+    "Sam Sweeney",
+    "Abby Day",
+    "Aly Nelson",
+  ];
+  const actual = reorderNames([
+    "Jessica Day",
+    "Abby Day",
+    "Cecelia Parekh",
+    "Aly Nelson",
+    "Sam Sweeney",
+  ]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 7
+// An array of five names with two first names that have the same two last letters
+test("should return the names in the correct order", () => {
+  const expected = [
+    "Cecelia Parekh",
+    "Aria Day",
+    "Sam Sweeney",
+    "Winston Schmidt",
+    "Nicholas Miller",
+  ];
+  const actual = reorderNames([
+    "Aria Day",
+    "Nicholas Miller",
+    "Cecelia Parekh",
+    "Winston Schmidt",
+    "Sam Sweeney",
+  ]);
+  expect(actual).toStrictEqual(expected);
+});
+
+// Test Case 8
+// An array of five names with two first names that have all the same letters except the first letter
+test("should return the names in the correct order", () => {
+  const expected = [
+    "Jessica Day",
+    "Sam Sweeney",
+    "Jason Genzlinger",
+    "Mason Miller",
+    "Winston Schmidt",
+  ];
+  const actual = reorderNames([
+    "Jessica Day",
+    "Mason Miller",
+    "Jason Genzlinger",
     "Winston Schmidt",
     "Sam Sweeney",
   ]);

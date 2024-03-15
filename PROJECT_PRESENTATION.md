@@ -2,27 +2,27 @@
 
 ## 👋 Intro
 
-Hiya, I'm Erin! I'm originally from Sydney, Australia and now live in Liverpool, UK. I used to be an art director for film & television - I would make things, people would watch them, and that was that. Now I'm transitioning into tech to make things that people can actually interact with - like this kata!
-
-## 🎯 MVPS
-
-### MVP 1
-
-Sort an array of strings in alphabetical order by the final letter in each string, e.g. <br> `[ 'Neal', 'Peter', 'Elizabeth', 'Sara', 'Kate' ]` <br> returns -> <br> `[ 'Sara', 'Kate', 'Elizabeth', 'Neal', 'Peter' ]` <br> Arrays containing multiple identical names will not be provided as arguments.
-
-### MVP 2
-
-Sort an array of first and last names in alphabetical order by the final letter of the first name, e.g. <br> `[ 'Jessica Day', 'Nicholas Miller', 'Paul Genzlinger', 'Winston Schmidt', 'Sam Sweeney' ]` <br> returns -> <br> `[ 'Jessica Day', 'Paul Genzlinger', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]` <br> Arrays containing multiple identical first names will not be provided as arguments.
-
-### MVP 3
-
-Sort an array of first and last names in alphabetical order by the final letter of the first name. If two or more first names are identical, those names should be ordered alphabetically by the last letter of the last name, e.g. <br> `[ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ]` <br> returns -> <br> `[ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ]` <br> Arrays containing multiple identical first names will not be provided as arguments.
+Hiya, I'm Erin! I'm originally from Sydney, Australia and now live in Liverpool, UK. I used to be an art director for film & television - I would make films, people would watch them, and that was that. Now I'm transitioning into tech to make things that people can actually interact with - like this kata!
 
 ## 📖 My Kata Scenario
 
 Adam Aardvark is fed up of being chosen first in class. His teacher always picks on students in alphabetical order by the first letter of their last name - and with a last name like that, Adam has no chance! He thinks a better way to alphabetically order the class would be by the last letter of their first names, so he can sit comfortably in the middle.
 
-Write a function that takes in an array of names and returns an array where the names are sorted in alphabetical order in reverse - the last letter of each name takes priority, then the second last letter, and so on.
+Write a function that takes in an array of names and returns an array where the names are sorted in alphabetical order by first name in reverse - the last letter of each first name takes priority, then the second last letter, and so on.
+
+## 🎯 MVPS
+
+### MVP 1
+
+Sort an array of strings in alphabetical order by the final letter in each string, e.g. <br> `[ 'Neal', 'Peter', 'Elizabeth', 'Sara', 'Kate' ]` <br> returns -> <br> `[ 'Sara', 'Kate', 'Elizabeth', 'Neal', 'Peter' ]` <br> Note: Arrays containing multiple identical names will not be provided as arguments.
+
+### MVP 2
+
+Sort an array of first and last names in alphabetical order by the final letter of the first name, e.g. <br> `[ 'Jessica Day', 'Nicholas Miller', 'Paul Genzlinger', 'Winston Schmidt', 'Sam Sweeney' ]` <br> returns -> <br> `[ 'Jessica Day', 'Paul Genzlinger', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]` <br> Note: Arrays containing multiple identical first names will not be provided as arguments.
+
+### MVP 3
+
+Sort an array of first and last names in alphabetical order by the final letter of the first name. If two or more first names are identical, those names should be ordered alphabetically by the last letter of the last name, e.g. <br> `[ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ]` <br> returns -> <br> `[ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ]`
 
 ## List of Tests
 
@@ -56,18 +56,11 @@ Write a function that takes in an array of names and returns an array where the 
 
 | Test Case | Test Description                                                                                                                                     | Input                                                                                       | Expected Result                                                                             |
 | --------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| 1         | An array of one name                                                                                                                                 | [ 'Jessica Day' ]                                                                           | [ 'Jessica Day' ]                                                                           |
-| 2         | An array of two names in the correct order                                                                                                           | [ 'Jessica Day', 'Cecelia Parekh' ]                                                         | [ 'Jessica Day', 'Cecelia Parekh' ]                                                         |
-| 3         | An array of two names in an incorrect order                                                                                                          | [ 'Nicholas Miller', 'Jessica Day' ]                                                        | [ 'Jessica Day', 'Nicholas Miller' ]                                                        |
-| 4         | An array of five names in an incorrect order                                                                                                         | [ 'Jessica Day', 'Nicholas Miller', 'Paul Genzlinger', 'Winston Schmidt', 'Sam Sweeney' ]   | [ 'Jessica Day', 'Paul Genzlinger', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]   |
-| 5         | An array of five names with two first names that have the same last letter                                                                           | [ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Sam Sweeney' ]    | [ 'Jessica Day', 'Cecelia Parekh', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]    |
-| 6         | An array of five names with two sets of first names that have the same last letter                                                                   | [ 'Jessica Day', 'Abby Day', 'Cecelia Parekh', 'Aly Nelson', 'Sam Sweeney' ]                | [ 'Jessica Day', 'Cecelia Parekh', 'Sam Sweeney', 'Abby Day', 'Aly Nelson' ]                |
-| 7         | An array of five names with two first names that have the same two last letters                                                                      | [ 'Aria Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Sam Sweeney' ]       | [ 'Cecelia Parekh', 'Aria Day', 'Sam Sweeney', 'Winston Schmidt', 'Nicholas Miller' ]       |
-| 8         | An array of five names with two first names that have all the same letters except the first letter                                                   | [ 'Jessica Day', 'Mason Miller', 'Jason Genzlinger', 'Winston Schmidt', 'Sam Sweeney' ]     | [ 'Jessica Day', 'Sam Sweeney', 'Jason Genzlinger', 'Mason Miller', 'Winston Schmidt' ]     |
-| 9         | An array of five names with two first names that are the same                                                                                        | [ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ] | [ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ] |
-| 10        | An array of five names with three first names that are the same, two of which have last names ending in the same letter                              | [ ]                                                                                         | [ ]                                                                                         |
-| 11        | An array of five names with three first names that are the same, two of which have last names ending in the same two letters                         | [ ]                                                                                         | [ ]                                                                                         |
-| 12        | An array of five names with three first names that are the same, two of which have last names that have all the same letters except the first letter | [ ]                                                                                         | [ ]                                                                                         |
+| 1         | An array of five names with two first names that are the same                                                                                        | [ 'Jessica Day', 'Nicholas Miller', 'Cecelia Parekh', 'Winston Schmidt', 'Winston Bishop' ] | [ 'Jessica Day', 'Cecelia Parekh', 'Winston Bishop', 'Winston Schmidt', 'Nicholas Miller' ] |
+| 2         | An array of five names with three first names that are the same, two of which have last names ending in the same letter                              | [ ]                                                                                         | [ ]                                                                                         |
+| 3         | An array of five names with four first names that are the same, two pairs of which have last names ending in the same letter                         | [ ]                                                                                         | [ ]                                                                                         |
+| 4         | An array of five names with three first names that are the same, two of which have last names ending in the same two letters                         | [ ]                                                                                         | [ ]                                                                                         |
+| 5         | An array of five names with three first names that are the same, two of which have last names that have all the same letters except the first letter | [ ]                                                                                         | [ ]                                                                                         |
 
 ## ✏️ The Plan
 
@@ -75,13 +68,14 @@ Write a function that takes in an array of names and returns an array where the 
 
 - Install Vitest as a dev dependency ✅
 - Set up NPM `test` script ✅
-- Reread the Vitest docs to familiarise myself with them again
+- Reread the Vitest docs to familiarise myself with them again ✅
 
 ### Plan
 
 - Narrow down a kata idea ✅
 - Write the kata scenario ✅
-- Distill my MVP ✅
+- Distill my MVP 1 ✅
+- Write the plan for my build phase ✅
 
 ### Build
 
@@ -98,12 +92,21 @@ Write a function that takes in an array of names and returns an array where the 
 
 **MVP 2**
 
-- Create a list of different inputs that could test for all edge cases of my more complex kata problem
-- Write a test for each of the items in my list of inputs
+- Create a list of different inputs that could test for all edge cases of my more complex kata problem ✅
+- Write a test for each of the items in my list of inputs ✅
 - Temporarily add a working implementation to the solution function in `main.js`
 - Check that the tests fail before implementation and pass when the function is coded correctly
 - Remove the solution code
 - Celebrate completing MVP 2!!
+
+**MVP 3**
+
+- Create a list of different inputs that could test for all edge cases of my even more complex kata problem
+- Write a test for each of the items in my list of inputs
+- Temporarily add a working implementation to the solution function in `main.js`
+- Check that the tests fail before implementation and pass when the function is coded correctly
+- Remove the solution code
+- Celebrate completing MVP 3!!!
 
 ### Deploy
 
