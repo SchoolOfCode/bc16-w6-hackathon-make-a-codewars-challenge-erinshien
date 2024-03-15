@@ -110,7 +110,7 @@ Sort an array of first and last names in alphabetical order by the final letter 
 
 ### Deploy
 
-- Polish my presentation markdown file
+- Polish my presentation markdown file ✅
 - Share my repo link in the Hackathon Channel
 - Upload my kata to Codewars
 
